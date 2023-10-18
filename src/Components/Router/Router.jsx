@@ -5,6 +5,10 @@ import {
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Root from "../Root/Root";
 import Home from "../Home/Home";
+import AddProduct from "../AddProduct/AddProduct";
+import MyCart from "../MyCart/MyCart";
+import Login from "../Login/Login";
+import Register from "../Register/Register";
 
 const Router =createBrowserRouter([
   {
@@ -16,9 +20,24 @@ const Router =createBrowserRouter([
         path:"/",
         element:<Home></Home>,
      },
+     {
+      path:"/product",
+      element:<AddProduct></AddProduct>,
+     },
+     {
+      path:"/cart",
+      element:<MyCart></MyCart>
+     },
+     {
+      path:"/login",
+      element:<Login></Login>,
+     },
+     {
+      path:"/register",
+      element:<Register></Register>,
+     },
      
-     
-     
+
      
     ]
   },
