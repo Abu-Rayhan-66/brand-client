@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import Logo from "../Logo/Logo";
 
 
 
@@ -21,7 +22,7 @@ const Navbar = () => {
         <li className="mr-2"><NavLink to="/cart" className="rounded-3xl btn bg-red-500 text-white hover:text-black font-semibold text-lg">My Cart</NavLink></li>
     </>
     return (
-        <div className="navbar shadow-lg  px-20">
+        <div className="navbar shadow-lg px-4  md:px-20">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -31,7 +32,7 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+       <Logo></Logo>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -57,6 +58,7 @@ const Navbar = () => {
             <button className="btn bg-red-500 text-white rounded-3xl hover:text-black  text-lg font-semibold">Login</button>
             </Link>
           }
+          
   </div>
 </div>
     );
