@@ -14,12 +14,12 @@ const ComingEvent = () => {
             </div>
             <div >
                 <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/kxKdJ2D/event2.png" alt="" />
-                <h2 className="text-center text-lg font-semibold"> IPhone 15 Is Now 15% Off On Pre Order. </h2>
+                <h2 className="text-center text-lg font-semibold"> Iphone 15 Is Now 15% Off On Pre Order. </h2>
                 
             </div>
             <div >
                 <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/R31TDK5/event3.png" alt="" />
-                <h2 className="text-center text-lg font-semibold">IPhone 14 Is Now 20% Off.</h2>
+                <h2 className="text-center text-lg font-semibold">Iphone 14 Is Now 20% Off.</h2>
                 
             </div>
             <div >
