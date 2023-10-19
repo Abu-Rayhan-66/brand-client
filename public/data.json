@@ -1,0 +1,36 @@
+[ {
+    "id": 1,
+    "image": "https://i.ibb.co/WkBcpRx/brand1.png",
+    "name": "APPLE"
+ },
+ 
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/xsjHK65/brand2.png",
+    "name": "SAMSUNG"
+ },
+ 
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/f1PB0t0/brand3.png",
+    "name": "SONY"
+ },
+ 
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/bbGJ3D9/brand4.png",
+    "name": "ONEPLUS"
+ },
+ 
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/hHf2n0R/brand5.png",
+    "name": "XIAOMI"
+ },
+ 
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/jZBC360/brand6.png",
+    "name": "HUAWEI"
+ }
+]

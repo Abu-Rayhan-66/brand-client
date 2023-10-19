@@ -10,6 +10,8 @@ import MyCart from "../MyCart/MyCart";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Cards from "../Cards/Cards";
+
 
 const Router =createBrowserRouter([
   {
@@ -37,6 +39,11 @@ const Router =createBrowserRouter([
       path:"/register",
       element:<Register></Register>,
      },
+     {
+      path:"/cards",
+      element:<Cards></Cards>
+     }
+     
      
 
      

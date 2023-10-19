@@ -4,7 +4,7 @@ const ComingEvent = () => {
     return (
         <div>
             <div >
-            <h2 className="text-3xl font-bold text-center mt-10 mb-10">Discount Offer</h2>
+            <h2 className="text-5xl font-extrabold text-center mt-10 mb-10">Discount Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 md:mx-20 gap-6">
             
             <div >
@@ -29,7 +29,7 @@ const ComingEvent = () => {
             </div>
             <div >
                 <img className="rounded-md h-[40vh] w-full p-4 shadow-xl" src="https://i.ibb.co/2c7Hdzx/event5.png" alt="" />
-                <h2 className="text-center text-lg font-semibold">One Plus Nord Is Now 30% Off Because Of Green Line</h2>
+                <h2 className="text-center text-lg font-semibold">OnePlus Nord Is Now 30% Off Because Of Green Line</h2>
                 
             </div>
             <div >

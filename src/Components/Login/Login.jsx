@@ -56,7 +56,7 @@ const Login = () => {
                         <input className='pl-2  rounded-3xl py-2 w-[300px] md:w-[400px]' type="email" required name="email"  placeholder='Email' id="" />
                         <br />
                         <h3 className='text-white text-lg  font-medium'>Password</h3>
-                        <input className='pl-2  rounded-3xl py-2 w-[300px] md:w-[400px]  text-lg ' type="password" required name="password" placeholder='Password' id="" />
+                        <input className='pl-2 rounded-3xl py-2 w-[300px] md:w-[400px]  text-lg ' type="password" required name="password" placeholder='Password' id="" />
                         
                     <p className='text-white mb-6 w-[300px] '>Do not have an account? <Link className='font-semibold text-purple-800' to="/register">Register</Link></p>
                         {
