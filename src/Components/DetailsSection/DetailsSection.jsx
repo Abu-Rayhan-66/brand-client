@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { Rating } from "@mui/material";
 
 
 const DetailsSection = () => {
@@ -43,8 +44,16 @@ const DetailsSection = () => {
 
     return (
         <div>
-            <h2>product name{name}</h2>
-            <button onClick={() =>handleAddCart(_id)} className="btn">Add to Cart</button>
+            
+           <div className="mx-8 md:mx-40 h-[600px]  flex flex-col justify-center items-center text-xl mt-6 mb-6 rounded-md border-2 p-4">
+            <img className="h-[300px] w-[350px] rounded-md border-2 p-4" src={photo} alt="" />
+            <p className="mt-2 ">Product Name: {name}</p>
+            <p>Brand Name: {brand}</p>
+            <p>Category: {type}</p>
+            <p><Rating name="size-medium" defaultValue={rating} readOnly/></p>
+            <p className="mb-4">Price ${price}</p>
+           <button onClick={() =>handleAddCart(_id)} className="btn">Add to Cart</button>
+           </div>
         </div>
     );
 };

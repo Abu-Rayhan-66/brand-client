@@ -5,17 +5,19 @@ import 'swiper/css';
 
 const Slider = () => {
   return (
-    <div>
+    <div className='mt-10 mx-8 md:mx-20'>
       <Swiper
       spaceBetween={50}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      <div className=''>
+      <SwiperSlide><img className='w-full   h-[50vh]' src="https://i.ibb.co/LrsfZnX/s1.png" alt="" /></SwiperSlide>
+      <SwiperSlide><img className='w-full  h-[50vh]'  src="https://i.ibb.co/N7F5jNT/s2.png" alt="" /></SwiperSlide>
+      <SwiperSlide><img className='w-full  h-[50vh]' src="https://i.ibb.co/chDyNTp/s3.png" alt="" /></SwiperSlide>
+      </div>
+      
       
     </Swiper>
     </div>

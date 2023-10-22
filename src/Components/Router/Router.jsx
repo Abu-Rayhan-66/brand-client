@@ -13,6 +13,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Cards from "../Cards/Cards";
 import BrandProduct from "../BrandProduct/BrandProduct";
 import DetailsSection from "../DetailsSection/DetailsSection";
+import UpdateProduct from "../UpdateProduct/UpdateProduct";
 
 
 
@@ -57,6 +58,11 @@ const Router =createBrowserRouter([
       element:<PrivateRoute><DetailsSection></DetailsSection></PrivateRoute>,
       loader:({params}) => fetch(`http://localhost:5000/brands/${params._id}`)
     },
+    {
+      path:"/update/:id",
+      element:<UpdateProduct></UpdateProduct>,
+      loader:({params}) => fetch(`http://localhost:5000/brands/${params.id}`)
+    }
      
      
 
