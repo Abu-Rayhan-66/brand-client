@@ -11,6 +11,9 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Cards from "../Cards/Cards";
+import BrandProduct from "../BrandProduct/BrandProduct";
+import DetailsSection from "../DetailsSection/DetailsSection";
+
 
 
 const Router =createBrowserRouter([
@@ -42,7 +45,18 @@ const Router =createBrowserRouter([
      {
       path:"/cards",
       element:<Cards></Cards>
-     }
+     },
+    {
+      path:"/brandProduct/:id",
+      element:<BrandProduct></BrandProduct>,
+       loader:() => fetch('/data.json')
+       
+    },
+    {
+      path:"/details/:_id",
+      element:<PrivateRoute><DetailsSection></DetailsSection></PrivateRoute>,
+      loader:({params}) => fetch(`http://localhost:5000/brands/${params._id}`)
+    },
      
      
 

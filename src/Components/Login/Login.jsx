@@ -63,7 +63,9 @@ const Login = () => {
                           error && <p className="text-red-800 font-semibold text-xl">{error}</p>
                         }
              <button    className="btn w-[300px] md:w-[400px] bg-red-500 text-white rounded-3xl hover:text-black  text-lg font-semibold">Login</button>
-             <button onClick={handleGoogleLogIn} className="btn w-[300px] mt-4 md:w-[400px] bg-red-500 text-white rounded-3xl hover:text-black  text-lg font-semibold">Login With Google</button>
+             <button onClick={handleGoogleLogIn} className="btn w-[300px] mt-4 md:w-[400px]
+              bg-red-500 text-white rounded-3xl hover:text-black 
+               text-lg font-semibold">Login With Google</button>
                         </form>
                 </div>
             </div>

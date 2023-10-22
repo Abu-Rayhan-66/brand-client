@@ -1,9 +1,20 @@
+import { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
 
 
 const MyCart = () => {
+    const [carts, setCarts] = useState([])
+    useEffect(() =>{
+        fetch('http://localhost:5000/cart')
+        .then(res => res.json())
+        .then(data => setCarts(data))
+    },[])
     return (
         <div>
-            <h2>my cart</h2>
+            {
+                carts.map(cart => <Cart key={cart._id} cart={cart}></Cart>)
+            }
+
         </div>
     );
 };

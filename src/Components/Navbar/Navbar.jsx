@@ -20,6 +20,7 @@ const Navbar = () => {
         <li className="mr-2"><NavLink to="/" className="rounded-3xl btn bg-red-500 text-white hover:text-black font-semibold text-lg">Home</NavLink></li>
         <li className="mr-2"><NavLink to="/product" className="rounded-3xl btn bg-red-500 text-white hover:text-black font-semibold text-lg">Add Product</NavLink></li>
         <li className="mr-2"><NavLink to="/cart" className="rounded-3xl btn bg-red-500 text-white hover:text-black font-semibold text-lg">My Cart</NavLink></li>
+        {/* <li className="mr-2"><NavLink to="/brandProduct" className="rounded-3xl btn bg-red-500 text-white hover:text-black font-semibold text-lg">Brand Card</NavLink></li> */}
     </>
     return (
         <div className="navbar shadow-lg px-4  md:px-20">
