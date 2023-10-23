@@ -1,13 +1,48 @@
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const UpdateProduct = () => {
     const updateData = useLoaderData()
-   const {brand, name, photo, price, type, rating,} =  updateData ||{}
+   const {_id, brand, name, photo, price, type, rating,} =  updateData ||{}
 
+   const handleUpdate = e =>{
+    e.preventDefault()
+    const form = e.target;
+    const photo = form.photo.value;
+    const name = form.name.value;
+    const brand = form.brand.value;
+    const type = form.type.value
+    const price = form.price.value;
+    const rating = form.rating.value;
+    const updateProduct = {photo, name, brand, type, price, rating}
+
+    fetch(`http://localhost:5000/brands/${_id}`,{
+        method:'PUT',
+        headers:{
+            'content-type':'application/json',
+        },
+        body:JSON.stringify(updateProduct)
+    })
+
+    .then(res => res.json())
+    .then(data =>{
+        console.log(data)
+    
+        if(data.modifiedCount >0){
+            Swal.fire({
+                title: 'Success !',
+                text: 'successfully Updated',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+              })
+        }
+    })       
+}
+// https://i.ibb.co/6PfS0Tg/Screenshot-5.png
     return (
         <div className="bg-slate-400 bg-opacity-50 w-[350px] md:w-[600px] mb-20 p-10 rounded-md flex  mx-auto justify-center mt-10">
-            <form >
+            <form onSubmit={handleUpdate} >
                 <p className="text-lg font-semibold text-white">Image</p>
                 <input className="pl-2 rounded-3xl py-2 w-[300px] md:w-[400px]  text-lg " type="text" required  defaultValue={photo}  name="photo" placeholder="Image" id="" />
                 <br />

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Logo from "../Logo/Logo";
+import DarkMode from "../DarkMode/DarkMode";
 
 
 
@@ -41,6 +42,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
+    <DarkMode></DarkMode>
   {
             user && <p>{user.displayName}</p>
           }

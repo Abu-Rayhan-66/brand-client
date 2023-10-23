@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 
 
+
+
 const MyCart = () => {
+   
+    
     const [carts, setCarts] = useState([])
     useEffect(() =>{
         fetch('http://localhost:5000/cart')
@@ -12,7 +16,8 @@ const MyCart = () => {
     return (
         <div>
             {
-                carts.map(cart => <Cart key={cart._id} cart={cart}></Cart>)
+                carts.map(cart => <Cart key={cart._id}
+                     cart={cart} carts={carts} setCarts={setCarts} ></Cart>)
             }
 
         </div>
