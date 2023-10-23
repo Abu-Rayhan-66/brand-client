@@ -20,7 +20,7 @@ const AddProduct = () => {
 
         const allData = {photo, name, brand, type, price, description, rating}
 
-        fetch('http://localhost:5000/brands',{
+        fetch('https://brand-server-jupp2a5jy-abu-rayhan-s-projects.vercel.app/brands',{
             method:'POST',
             headers:{
                 'content-type':'application/json',

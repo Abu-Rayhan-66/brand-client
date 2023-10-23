@@ -15,8 +15,6 @@ const Card = ({ card }) => {
                     <figure><img src={image} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="text-center text-3xl font-bold">{name}</h2>
-
-
                     </div>
                 </div>
                </Link>

@@ -13,7 +13,7 @@ const BrandProductCard = ({card}) => {
     const [filter,setFilter] = useState([])
     
     useEffect(()=>{
-        fetch('http://localhost:5000/brands')
+        fetch('https://brand-server-jupp2a5jy-abu-rayhan-s-projects.vercel.app/brands')
         .then(res => res.json())
         .then(data => {
             setData(data)
@@ -33,7 +33,9 @@ const BrandProductCard = ({card}) => {
         
        <div>
         <Slider></Slider>
-         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  mx-10 mb-20 mt-20 md:mx-20 gap-12">
+
+        {
+            (filter.length ==0) ? <img className="mt-10 mb-10 w-full h-[40vh] md:h-[80vh]" src="https://i.ibb.co/mD3V2Rm/error2.png" alt="" /> :  <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  mx-10 mb-20 mt-10 md:mx-20 gap-12">
             
             {
                 filter.map(product => <Brand key={product._id} product={product}></Brand>)
@@ -41,6 +43,8 @@ const BrandProductCard = ({card}) => {
             }
             
         </div>
+        }
+        
        </div>
     );
 };

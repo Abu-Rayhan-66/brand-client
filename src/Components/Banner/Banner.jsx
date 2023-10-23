@@ -3,14 +3,8 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div>
-            <div id="banner-bg" className="w-full mt-10 mb-10">
-            <h2 className='sm:text-xl md:text-4xl text-white ml-4  md:ml-10'>The World is in your hand, <br /> when you are in this tech land.</h2>
-            <br />
-            
-            
-        </div>
-        
+        <div className='mx-10 md:mx-20 mt-10 mb-10'>
+            <img className='w-full  h-[40vh] md:h-[60vh] ' src="https://i.ibb.co/tQ78hqh/nbanner.png" alt="" />
         </div>
     );
 };

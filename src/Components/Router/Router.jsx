@@ -33,8 +33,8 @@ const Router =createBrowserRouter([
      },
      {
       path:"/cart",
-      element:<MyCart></MyCart>,
-      loader:() => fetch('http://localhost:5000/cart')
+      element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
+      loader:() => fetch('https://brand-server-jupp2a5jy-abu-rayhan-s-projects.vercel.app/cart')
      },
      {
       path:"/login",
@@ -46,7 +46,8 @@ const Router =createBrowserRouter([
      },
      {
       path:"/cards",
-      element:<Cards></Cards>
+      element:<Cards></Cards>,
+   
      },
     {
       path:"/brandProduct/:id",
@@ -57,17 +58,14 @@ const Router =createBrowserRouter([
     {
       path:"/details/:_id",
       element:<PrivateRoute><DetailsSection></DetailsSection></PrivateRoute>,
-      loader:({params}) => fetch(`http://localhost:5000/brands/${params._id}`)
+      loader:({params}) => fetch(`https://brand-server-jupp2a5jy-abu-rayhan-s-projects.vercel.app/brands/${params._id}`)
     },
     {
       path:"/update/:id",
-      element:<UpdateProduct></UpdateProduct>,
-      loader:({params}) => fetch(`http://localhost:5000/brands/${params.id}`)
-    }
-     
-     
-
-     
+      element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
+      loader:({params}) => fetch(`https://brand-server-jupp2a5jy-abu-rayhan-s-projects.vercel.app/brands/${params.id}`)
+    },
+   
     ]
   },
  
