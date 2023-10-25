@@ -11,5 +11,8 @@
 
 
 
-Client live link: https://brand-shop-2e5db.web.app
-server live link: https://brand-server-jupp2a5jy-abu-rayhan-s-projects.vercel.app
+Client site live link of my TECHGEAR website: https://brand-shop-2e5db.web.app
+               
+server site live link: https://brand-server-lf8rrhpi0-abu-rayhan-s-projects.vercel.app
+                  
+                
